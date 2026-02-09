@@ -89,10 +89,13 @@ This assumes **everything runs on the server PC**:
 
 ![Add roles step 1](screenshots/add%20rolls%201.PNG)
 *Add Roles and Features wizard (start).* 
+
 ![Add roles step 2](screenshots/add%20rolls%202.PNG)
 *Selecting Active Directory Domain Services.*
+
 ![Add roles step 3](screenshots/add%20rolls%203.PNG)
 *Installation confirmation step.*
+
 ![Domain name](screenshots/domanin%20name.PNG)
 *Domain/forest name selection.*
 
