@@ -135,6 +135,34 @@ LDAPS requires a valid TLS certificate on the Domain Controller.
 2. Successful login → welcome page.
 3. Failed login → error message + log entry.
 
+## Screenshots
+Below are project screenshots stored in the screenshots folder.
+
+### Active Directory Setup
+![Add roles step 1](screenshots/add%20rolls%201.PNG)
+![Add roles step 2](screenshots/add%20rolls%202.PNG)
+![Add roles step 3](screenshots/add%20rolls%203.PNG)
+![Domain name](screenshots/domanin%20name.PNG)
+![OU created](screenshots/OU.PNG)
+![Create user](screenshots/create%20user.PNG)
+![User details](screenshots/user1.PNG)
+
+### LDAPS Certificate
+![Self-signed certificate](screenshots/self%20signed%20certificate.PNG)
+![Created certificate](screenshots/created%20certificate.PNG)
+![Move cert to trusted root](screenshots/move%20the%20certificate%20from%20personal%20to%20the%20trusted%20root.PNG)
+![Certificate working](screenshots/the%20certificate%20is%20working.PNG)
+
+### PHP / XAMPP Setup
+![Enable LDAP extension](screenshots/Enable%20LDAP%20extension%20in%20PHP.PNG)
+![OpenSSL enabled](screenshots/Important%20for%20LDAPS%20-%20OpenSSL%20section%20is%20enabled.PNG)
+
+### App Screens
+![Login page](screenshots/login.PNG)
+![Logged in](screenshots/loged.PNG)
+![Logs](screenshots/logs.PNG)
+![IPv4 settings](screenshots/ipv4.PNG)
+
 ## Logs
 Login attempts are stored in:
 - [logs/login.log](logs/login.log)
