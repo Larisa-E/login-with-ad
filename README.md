@@ -135,7 +135,7 @@ LDAPS requires a valid TLS certificate on the Domain Controller.
 2. Successful login → welcome page.
 3. Failed login → error message + log entry.
 
-## Screenshots
+## Project Gallery
 Below are project screenshots stored in the screenshots folder.
 
 ### Active Directory Setup
@@ -161,7 +161,6 @@ Below are project screenshots stored in the screenshots folder.
 ![Login page](screenshots/login.PNG)
 ![Logged in](screenshots/loged.PNG)
 ![Logs](screenshots/logs.PNG)
-![IPv4 settings](screenshots/ipv4.PNG)
 
 ## Logs
 Login attempts are stored in:
@@ -178,14 +177,6 @@ I spent time debugging this issue. DNS and port 636 were fine, but LDAPS failed 
 2. Convert to PEM for OpenSSL.
 3. Set `ldap.cafile` in `php.ini` to the PEM file.
 4. Restart Apache.
-
-### LDAP 49 (Invalid Credentials)
-This means the server is reachable, but the username/password was wrong.
-Use the short name (`testuser1`) if the code appends `@school.local` automatically.
-
-## Security Notes
-- This demo only validates credentials by LDAP bind.
-- For production, add CSRF protection, rate limiting, HTTPS, and stronger error handling.
 
 ## License
 Use freely for internal or educational purposes.
