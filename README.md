@@ -88,8 +88,8 @@ This assumes **everything runs on the server PC**:
 5. Set the DSRM password and reboot.
 
 ![Add roles step 1](screenshots/add%20rolls%201.PNG)
-
 *Add Roles and Features wizard (start).* 
+
 ![Add roles step 2](screenshots/add%20rolls%202.PNG)
 *Selecting Active Directory Domain Services.*
 
@@ -107,8 +107,10 @@ This assumes **everything runs on the server PC**:
 
 ![OU created](screenshots/OU.PNG)
 *Organizational Unit created for test users.*
+
 ![Create user](screenshots/create%20user.PNG)
 *Creating a new AD user.*
+
 ![User details](screenshots/user1.PNG)
 *User properties and logon details.*
 
@@ -125,6 +127,7 @@ This assumes **everything runs on the server PC**:
 
 ![Enable LDAP extension](screenshots/Enable%20LDAP%20extension%20in%20PHP.PNG)
 *Enabling the LDAP extension in PHP.*
+
 ![OpenSSL enabled](screenshots/Important%20for%20LDAPS%20-%20OpenSSL%20section%20is%20enabled.PNG)
 *OpenSSL enabled (required for LDAPS).*
 
@@ -152,10 +155,13 @@ LDAPS requires a valid TLS certificate on the Domain Controller.
 
 ![Self-signed certificate](screenshots/self%20signed%20certificate.PNG)
 *Self-signed certificate created on the Domain Controller.*
+
 ![Created certificate](screenshots/created%20certificate.PNG)
 *Verifying the certificate exists and is usable.*
+
 ![Move cert to trusted root](screenshots/move%20the%20certificate%20from%20personal%20to%20the%20trusted%20root.PNG)
 *Move/export to Trusted Root so the client trusts it.*
+
 ![Certificate working](screenshots/the%20certificate%20is%20working.PNG)
 *LDAPS certificate verification successful.*
 
@@ -172,6 +178,7 @@ LDAPS requires a valid TLS certificate on the Domain Controller.
 
 ![Login page](screenshots/login.PNG)
 *Login form page.*
+
 ![Logged in](screenshots/loged.PNG)
 *Successful login (welcome page).*
 
