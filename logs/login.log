@@ -1,0 +1,11 @@
+2026-02-03 10:08:07 | FAIL    | user=Testuser1 | ip=127.0.0.1 | reason=Login failed (LDAP -1: Can't contact LDAP server).
+2026-02-03 10:41:12 | FAIL    | user=Testuser1 | ip=::1 | reason=Login failed (LDAP -1: Can't contact LDAP server).
+2026-02-03 10:51:45 | FAIL    | user=Testuser1 | ip=::1 | reason=Login failed (LDAP -1: Can't contact LDAP server).
+2026-02-03 10:55:52 | FAIL    | user=Testuser1 | ip=::1 | reason=Login failed (LDAP -1: Can't contact LDAP server).
+2026-02-03 11:17:34 | FAIL    | user=Testuser1 | ip=::1 | reason=Login failed (LDAP 49: Invalid credentials).
+2026-02-03 11:17:48 | FAIL    | user=Testuser1 | ip=::1 | reason=Login failed (LDAP 49: Invalid credentials).
+2026-02-03 11:18:40 | FAIL    | user=testuser1 | ip=::1 | reason=Login failed (LDAP 49: Invalid credentials).
+2026-02-03 11:22:40 | FAIL    | user=SCHOOL\testuser1 | ip=::1 | reason=Login failed (LDAP 49: Invalid credentials).
+2026-02-03 11:23:00 | FAIL    | user=testuser1@school.local | ip=::1 | reason=Login failed (LDAP 49: Invalid credentials).
+2026-02-03 11:29:20 | FAIL    | user=testuser1 | ip=::1 | reason=Login failed (LDAP 49: Invalid credentials).
+2026-02-03 11:29:33 | SUCCESS | user=testuser1 | ip=::1
