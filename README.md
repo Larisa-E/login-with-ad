@@ -88,8 +88,8 @@ This assumes **everything runs on the server PC**:
 5. Set the DSRM password and reboot.
 
 ![Add roles step 1](screenshots/add%20rolls%201.PNG)
-*Add Roles and Features wizard (start).* 
 
+*Add Roles and Features wizard (start).* 
 ![Add roles step 2](screenshots/add%20rolls%202.PNG)
 *Selecting Active Directory Domain Services.*
 
