@@ -87,11 +87,20 @@ This assumes **everything runs on the server PC**:
 4. Create a new forest (example domain: `school.local`).
 5. Set the DSRM password and reboot.
 
+![Add roles step 1](screenshots/add%20rolls%201.PNG)
+![Add roles step 2](screenshots/add%20rolls%202.PNG)
+![Add roles step 3](screenshots/add%20rolls%203.PNG)
+![Domain name](screenshots/domanin%20name.PNG)
+
 ### Step 3 — Create Test Users (Why: you need accounts to log in)
 1. Open **Active Directory Users and Computers**.
 2. Create an OU (example: `TestUsers`).
 3. Create users: `testuser1`, `testuser2` (with known passwords).
 4. (Optional) Create a group `AppUsers` and add users.
+
+![OU created](screenshots/OU.PNG)
+![Create user](screenshots/create%20user.PNG)
+![User details](screenshots/user1.PNG)
 
 ### Step 4 — Install XAMPP (Why: PHP + Apache)
 1. Install XAMPP in `C:\xampp`.
@@ -103,6 +112,9 @@ This assumes **everything runs on the server PC**:
 2. Find `;extension=ldap` and change it to `extension=ldap`.
 3. Restart Apache.
 4. Verify with `phpinfo.php` that LDAP is enabled.
+
+![Enable LDAP extension](screenshots/Enable%20LDAP%20extension%20in%20PHP.PNG)
+![OpenSSL enabled](screenshots/Important%20for%20LDAPS%20-%20OpenSSL%20section%20is%20enabled.PNG)
 
 ### Step 6 — Enable LDAPS (Why: encrypted login)
 LDAPS requires a valid TLS certificate on the Domain Controller.
@@ -124,6 +136,11 @@ LDAPS requires a valid TLS certificate on the Domain Controller.
     - `ldap.cafile="C:\xampp\php\extras\ssl\LDAPS_Cert.pem"`
 5. **Restart Apache** in XAMPP.
 
+![Self-signed certificate](screenshots/self%20signed%20certificate.PNG)
+![Created certificate](screenshots/created%20certificate.PNG)
+![Move cert to trusted root](screenshots/move%20the%20certificate%20from%20personal%20to%20the%20trusted%20root.PNG)
+![Certificate working](screenshots/the%20certificate%20is%20working.PNG)
+
 ### Step 7 — Place the App in XAMPP Web Root
 1. Put this project in:
    - `C:\xampp\htdocs\login_with_AD`
@@ -135,29 +152,6 @@ LDAPS requires a valid TLS certificate on the Domain Controller.
 2. Successful login → welcome page.
 3. Failed login → error message + log entry.
 
-## Project Gallery
-Below are project screenshots stored in the screenshots folder.
-
-### Active Directory Setup
-![Add roles step 1](screenshots/add%20rolls%201.PNG)
-![Add roles step 2](screenshots/add%20rolls%202.PNG)
-![Add roles step 3](screenshots/add%20rolls%203.PNG)
-![Domain name](screenshots/domanin%20name.PNG)
-![OU created](screenshots/OU.PNG)
-![Create user](screenshots/create%20user.PNG)
-![User details](screenshots/user1.PNG)
-
-### LDAPS Certificate
-![Self-signed certificate](screenshots/self%20signed%20certificate.PNG)
-![Created certificate](screenshots/created%20certificate.PNG)
-![Move cert to trusted root](screenshots/move%20the%20certificate%20from%20personal%20to%20the%20trusted%20root.PNG)
-![Certificate working](screenshots/the%20certificate%20is%20working.PNG)
-
-### PHP / XAMPP Setup
-![Enable LDAP extension](screenshots/Enable%20LDAP%20extension%20in%20PHP.PNG)
-![OpenSSL enabled](screenshots/Important%20for%20LDAPS%20-%20OpenSSL%20section%20is%20enabled.PNG)
-
-### App Screens
 ![Login page](screenshots/login.PNG)
 ![Logged in](screenshots/loged.PNG)
 ![Logs](screenshots/logs.PNG)
