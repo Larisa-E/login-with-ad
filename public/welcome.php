@@ -1,5 +1,5 @@
 <?php
-// welcome.php: Protected page shown after successful authentication.
+// Protected page shown after successful authentication.
 require_once __DIR__ . '/../app/config.php'; // Load BASE_PATH for URLs.
 session_start(); // Resume session to check logged-in user.
 if (empty($_SESSION['user'])) {
