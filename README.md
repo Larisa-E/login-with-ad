@@ -121,12 +121,12 @@ This assumes **everything runs on the server PC**:
 
 *User properties and logon details.*
 
-### Step 4 — Install XAMPP (Why: PHP + Apache)
+### Step 4 — Install XAMPP (PHP + Apache)
 1. Install XAMPP in `C:\xampp`.
 2. Start Apache in the XAMPP Control Panel.
 3. Open `http://localhost/` to confirm Apache works.
 
-### Step 5 — Enable PHP LDAP (Why: PHP must speak LDAP)
+### Step 5 — Enable PHP LDAP (PHP must speak LDAP)
 1. Open `C:\xampp\php\php.ini`.
 2. Find `;extension=ldap` and change it to `extension=ldap`.
 3. Restart Apache.
@@ -140,7 +140,7 @@ This assumes **everything runs on the server PC**:
 
 *OpenSSL enabled (required for LDAPS).*
 
-### Step 6 — Enable LDAPS (Why: encrypted login)
+### Step 6 — Enable LDAPS (encrypted login)
 LDAPS requires a valid TLS certificate on the Domain Controller.
 
 **Self‑signed (lab) approach used in this project**:
