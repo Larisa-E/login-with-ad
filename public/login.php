@@ -1,5 +1,5 @@
 <?php
-// login.php: Renders login form and shows last authentication error.
+// login form and shows last authentication error.
 require_once __DIR__ . '/../app/config.php'; // Load BASE_PATH for URLs.
 session_start(); // Start session to read stored errors or user state.
 $err = $_SESSION['login_error'] ?? '';
