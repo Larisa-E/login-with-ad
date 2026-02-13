@@ -1,5 +1,5 @@
 <?php
-// authenticate.php: Processes login form submission and authenticates against AD.
+// login form submission and authenticates against AD.
 session_start(); // Start session to store user state and errors.
 require_once __DIR__ . '/../app/functions.php'; // Load helper functions and config.
 
