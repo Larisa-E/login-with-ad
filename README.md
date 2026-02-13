@@ -74,13 +74,13 @@ This assumes **everything runs on the server PC**:
 - Windows Server + AD DS
 - XAMPP + PHP app
 
-### Step 1 — Prepare Windows Server (Why: stable identity)
+### Step 1 — Prepare Windows Server
 1. Install Windows Server (2019/2022/2025).
 2. Set a clear hostname (example: `DC01`).
 3. Set a **static IP** (Domain Controllers must not use DHCP).
 4. Set DNS to **itself** (server IP or 127.0.0.1).
 
-### Step 2 — Install Active Directory (Why: central users)
+### Step 2 — Install Active Directory (central users)
 1. Server Manager → Add Roles and Features.
 2. Add **Active Directory Domain Services**.
 3. Promote to Domain Controller.
@@ -103,7 +103,7 @@ This assumes **everything runs on the server PC**:
 
 *Domain/forest name selection.*
 
-### Step 3 — Create Test Users (Why: you need accounts to log in)
+### Step 3 — Create Test Users (you need accounts to log in)
 1. Open **Active Directory Users and Computers**.
 2. Create an OU (example: `TestUsers`).
 3. Create users: `testuser1`, `testuser2` (with known passwords).
