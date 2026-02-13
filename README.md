@@ -100,6 +100,7 @@ This assumes **everything runs on the server PC**:
 *Installation confirmation step.*
 
 ![Domain name](screenshots/domanin%20name.PNG)
+
 *Domain/forest name selection.*
 
 ### Step 3 — Create Test Users (Why: you need accounts to log in)
@@ -109,12 +110,15 @@ This assumes **everything runs on the server PC**:
 4. (Optional) Create a group `AppUsers` and add users.
 
 ![OU created](screenshots/OU.PNG)
+
 *Organizational Unit created for test users.*
 
 ![Create user](screenshots/create%20user.PNG)
+
 *Creating a new AD user.*
 
 ![User details](screenshots/user1.PNG)
+
 *User properties and logon details.*
 
 ### Step 4 — Install XAMPP (Why: PHP + Apache)
@@ -129,9 +133,11 @@ This assumes **everything runs on the server PC**:
 4. Verify with `phpinfo.php` that LDAP is enabled.
 
 ![Enable LDAP extension](screenshots/Enable%20LDAP%20extension%20in%20PHP.PNG)
+
 *Enabling the LDAP extension in PHP.*
 
 ![OpenSSL enabled](screenshots/Important%20for%20LDAPS%20-%20OpenSSL%20section%20is%20enabled.PNG)
+
 *OpenSSL enabled (required for LDAPS).*
 
 ### Step 6 — Enable LDAPS (Why: encrypted login)
@@ -157,15 +163,19 @@ LDAPS requires a valid TLS certificate on the Domain Controller.
 **Images below show the LDAPS certificate process:**
 
 ![Self-signed certificate](screenshots/self%20signed%20certificate.PNG)
+
 *Self-signed certificate created on the Domain Controller.*
 
 ![Created certificate](screenshots/created%20certificate.PNG)
+
 *Verifying the certificate exists and is usable.*
 
 ![Move cert to trusted root](screenshots/move%20the%20certificate%20from%20personal%20to%20the%20trusted%20root.PNG)
+
 *Move/export to Trusted Root so the client trusts it.*
 
 ![Certificate working](screenshots/the%20certificate%20is%20working.PNG)
+
 *LDAPS certificate verification successful.*
 
 ### Step 7 — Place the App in XAMPP Web Root
@@ -180,18 +190,22 @@ LDAPS requires a valid TLS certificate on the Domain Controller.
 3. Failed login → error message + log entry.
 
 ![Login page](screenshots/login.PNG)
+
 *Login form page.*
 
 ![Logged in](screenshots/loged.PNG)
+
 *Successful login (welcome page).*
 
 ## Logs
 Login attempts are stored in:
 - [logs/login.log](logs/login.log)
+- 
 
 Each log entry includes timestamp, username, IP, and success/failure status.
 
 ![Logs](screenshots/logs.PNG)
+
 *Login attempts logged to file.*
 
 ## Troubleshooting / Notes
